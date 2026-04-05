@@ -1,0 +1,55 @@
+.nl {
+  background: var(--off-white);
+  text-align: center;
+}
+.nl__inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.nl__title {
+  color: var(--obsidian);
+  margin-bottom: 16px;
+}
+.nl__sub {
+  color: rgba(28,28,26,0.7);
+  margin-bottom: 32px;
+}
+.nl__form {
+  display: flex;
+  gap: 0;
+  max-width: 480px;
+  margin: 0 auto 16px;
+}
+.nl__input {
+  flex: 1;
+  padding: 14px 20px;
+  border: 1px solid var(--border);
+  background: transparent;
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--obsidian);
+  min-height: 48px;
+  border-radius: 0;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+.nl__input:focus {
+  border-color: var(--obsidian);
+}
+.nl__input::placeholder {
+  color: rgba(28,28,26,0.4);
+}
+.nl__btn {
+  white-space: nowrap;
+}
+.nl__micro {
+  font-size: 12px;
+  color: rgba(28,28,26,0.4);
+}
+
+@media (max-width: 480px) {
+  .nl__form {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

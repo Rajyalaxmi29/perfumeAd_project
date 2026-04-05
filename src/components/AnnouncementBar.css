@@ -1,0 +1,13 @@
+.announcement-bar {
+  background: var(--obsidian);
+  padding: 10px 20px;
+  display: flex; align-items: center; justify-content: center;
+  min-height: 40px;
+}
+.announcement-bar__text {
+  font-family: var(--sans); font-size: 12px; font-weight: 400;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--gold); text-align: center;
+  opacity: 0; transition: opacity 0.3s ease;
+}
+.announcement-bar__text.show { opacity: 1; }

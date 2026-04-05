@@ -1,0 +1,33 @@
+.bs {
+  background: var(--off-white);
+}
+.bs__header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.bs__header h2 {
+  color: var(--obsidian);
+}
+.bs__sub {
+  margin-top: 16px;
+}
+.bs__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.bs__footer {
+  text-align: center;
+  margin-top: 48px;
+}
+
+@media (max-width: 1024px) {
+  .bs__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .bs__grid {
+    grid-template-columns: 1fr;
+  }
+}

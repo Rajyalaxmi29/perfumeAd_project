@@ -1,0 +1,25 @@
+import { useEffect } from 'react';
+
+export function useReveal() {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px',
+      }
+    );
+
+    const elements = document.querySelectorAll('.reveal');
+    elements.forEach((el) => observer.observe(el));
+
+    // Optional cleanup
+    return () => observer.disconnect();
+  }, []); // Empty dep array so it reruns on mount
+}
