@@ -17,7 +17,12 @@ export default function Footer() {
               <a href="https://twitter.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Twitter</a>
               <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
             </div>
-            <p className="text-sm text-gray-600">© 2026 Aether. All rights reserved.</p>
+            <div className="flex flex-col md:items-end gap-2 text-right">
+              <p className="text-sm text-gray-600">© 2026 Aether. All rights reserved.</p>
+              <div className="text-[#FF4500]/80 text-[10px] uppercase tracking-[0.2em] mt-2 font-mono border border-[#FF4500]/20 px-3 py-1 rounded-full backdrop-blur-sm bg-white/5 pointer-events-auto">
+                Architected by Rajyalaxmi
+              </div>
+            </div>
           </div>
         </div>
       </div>
