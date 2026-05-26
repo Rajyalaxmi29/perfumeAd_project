@@ -76,7 +76,7 @@ export default function Home({ cartCount }) {
               <div className="flex items-center gap-4 text-[10px] md:text-xs text-white/40 uppercase tracking-widest mt-8 font-mono">
                 <span>{timeStr}</span>
                 <span className="w-px h-3 bg-white/20"></span>
-                <span>NYC, USA</span>
+                <span>INDIA</span>
               </div>
             </div>
           </div>
